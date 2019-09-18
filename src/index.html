@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TITLE</title>
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:100,300,700&display=swap&subset=korean" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#sidemenu" data-offset="50">
+        <!-- HEADER -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-dark bg-primary navbar-expand-md py-2 px-5">
+                <h2 class="navbar-brand mt-1"><strong>유비온 퍼블리싱 가이드</strong></h2>
+                <div class="navbar-collapse collapse mx-3" id="navbarNav">
+                    <button class="btn btn-primary active" type="button">작업규칙</button>
+                    <button class="btn btn-primary" type="button">마크업가이드</button>
+                    <button class="btn btn-primary" type="button">HTML리스트</button>
+                </div>
+            </nav>
+        </header>
+        <!-- //HEADER -->
+
+        <section class="container-fluid" id="content">
+            <div class="row h-100 py-5">
+                <nav class="col-md-3 p-5 bg-light sidebar">
+                    <div class="mt-4 mb-3 pt-2 sticky-top" id="sidemenu">
+                        <h1 class="pb-2">작업규칙</h1>
+                        <ul class="nav nav-pills flex-md-column flex-row justify-content-between">
+                            <li class="nav-item"><a href="#guide1_1" class="nav-link active">기본정책</a></li>
+                            <li class="nav-item"><a href="#guide1_2" class="nav-link">네이밍 규칙</a></li>
+                            <li class="nav-item"><a href="#guide1_3" class="nav-link">HTML 코드 작성 규칙</a></li>
+                            <li class="nav-item"><a href="#guide1_4" class="nav-link">HTML 요소 작성 규칙</a></li>
+                            <li class="nav-item"><a href="#guide1_5" class="nav-link">css(scss)작성 규칙</a></li>
+                            <li class="nav-item"><a href="#guide1_6" class="nav-link">용어 정의</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <main role="main" class="col m-3" id="main">
+                    <article class="col mt-5 py-3">
+                        <i class="anchor active" id="guide1_1"></i>
+                        <h3 class="">기본정책</h3>
+                        <ul>
+                            <li class="item">UI 지원 브라우저 : ie11이상, Chrome, FF 등 표준브라우저</li>
+                            <li class="item">인코딩 : UTF-8</li>
+                            <li class="item">웹 유형 : PC Web, Mobile Web, Responcive Web</li>
+                            <li class="item">PC 웹 호환성 : IE, Chrome, Firefox, Sapari, Opera</li>
+                            <li class="item">Mobile 웹 호환성 : 안드로이드 4.x 이상, IOS 9.x 이상, 사파리, 크롬</li>
+                            <li class="item">디자인최적화 해상도 : 1280 x 900 (최소대응 사이즈 : 가로 1024)</li>
+                            <li class="item">기능최적화는 개발기준참고</li>
+                        </ul>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor active" id="guide1_2"></i>
+                        <h3  class="">네이밍 규칙</h3>
+                        <div class="ui raised text segment">
+                            <h4 class="">기본 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4 class="">파일 및 폴더 네이밍 규칙</h4>
+                            <p>개발과 기획에서 정의된 디렉토리 구조도 및 화면 아이디가 정의가 되어있다면 그에 준한 규칙에 따라 파일 및 폴더의 이름을 사용한다.</p>
+                            <h5 class="sub header">파일 및 폴더 네이밍 규칙 예</h5>
+                        </div>
+                        <div class="ui">
+                            <h4>id 및 class 네이밍 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>이미지 네이밍 규칙</h4>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor active" id="guide1_3"></i>
+                        <h3  class="">HTML 코드 작성 규칙</h3>
+                        <div class="ui">
+                            <h4>기본 규칙</h4>
+                            <ul>
+                                <li>head 영역의 파일 링크 : 웹 문서 전송 속도를 높이기 위하여(Request Count 감소) 최소한의 파일을 사용한다.</li>
+                                <li>웹푶준 기반의 마크업(마크업 가이드 참고)</li>
+                                <li>크로스 브라우징 범위</li>
+                            </ul>
+                        </div>
+                        <div class="ui">
+                            <h4>들여쓰기 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>빈줄 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>DTD 및 인코딩 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>주석 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>초기파일</h4>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor" id="guide1_4"></i>
+                        <h3  class="">HTML 요소 작성 규칙</h3>
+                        <div class="ui">
+                            <h4>기본 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>전역 구조화 요소</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>SEO(검색 엔진 최적화)</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>폼 요소</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>표 요소</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>요소의 기본 애트리뷰트 지정 순서</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>Semantic Markup</h4>
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">종류</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">태그</th>
+                                        <th scope="col">설명</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2">그룹</td>
+                                        <td>블록타입</td>
+                                        <td>div</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>인라인타입</td>
+                                        <td>span</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">랜드마크</td>
+                                        <td>머리글</td>
+                                        <td>header</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>바닥글</td>
+                                        <td>footer</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>연속적인 컨텐츠그룹	</td>
+                                        <td>section</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>독립적인 컨텐츠그룹	</td>
+                                        <td>article</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>보조적인 컨텐츠그룹	</td>
+                                        <td>aside</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor" id="guide1_5"></i>
+                        <h3  class="">css(scss)작성 규칙</h3>
+                        <div class="ui">
+                            <h4>기본 규칙</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>들여쓰기</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>공백</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>빈 줄</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>줄 바꿈</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>인코딩</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>선택자</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>속성</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>z-index</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>핵(hack)</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>미디어타입 및 미디어쿼리</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>css 선언 타입</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>주석</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>파일 분기</h4>
+                        </div>
+                        <div class="ui">
+                            <h4>초기 파일</h4>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor" id="guide1_6"></i>
+                        <h3  class="">용어 정의</h3>
+                        <div class="ui">
+                            <dl class="row">
+                                <dt class="col-sm-3">요소(Element)</dt>
+                                <dd class="col-sm-9">HTML 문서를 구성하는 요소를 의미한다. 일반적으로 시작 태그, 내용, 종료 태그로 구성된다.</dd>
+
+                                <dt class="col-sm-3">애트리뷰트(Attribute)</dt>
+                                <dd class="col-sm-9">요소에 부여할 수 있는 특성을 의미한다. 기본값이 설정되어 있으나 애트리뷰트를 선언하여 다른 값으로 설정할 수 있다.</dd>
+
+                                <dt class="col-sm-3">선택자(Selector)</dt>
+                                <dd class="col-sm-9">요소에 CSS 스타일을 적용하기 위한 패턴이다. 이 문서에서 언급하는 선택자의 종류는 다음 표와 표 1-1같다.</dd>
+                                <dd class="col-sm-9">
+                                    <table>
+                                        <caption>표 1-1 선택자 종류</caption>
+                                        <colgroup>
+                                            <col style="width:20%;">
+                                            <col style="width:20%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </dd>
+                            </dl>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </section>
+    </body>
+
+</html>
