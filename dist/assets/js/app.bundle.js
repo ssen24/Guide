@@ -97,14 +97,14 @@ eval("/*!\n  * Bootstrap v4.3.1 (https://getbootstrap.com/)\n  * Copyright 2011-
 
 /***/ }),
 
-/***/ "./node_modules/bootstrap/scss/bootstrap.scss":
-/*!****************************************************!*\
-  !*** ./node_modules/bootstrap/scss/bootstrap.scss ***!
-  \****************************************************/
+/***/ "./node_modules/fontfaceobserver/fontfaceobserver.standalone.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/fontfaceobserver/fontfaceobserver.standalone.js ***!
+  \**********************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./node_modules/bootstrap/scss/bootstrap.scss?");
+eval("/* Font Face Observer v2.1.0 - © Bram Stein. License: BSD-3-Clause */(function(){function l(a,b){document.addEventListener?a.addEventListener(\"scroll\",b,!1):a.attachEvent(\"scroll\",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener(\"DOMContentLoaded\",function c(){document.removeEventListener(\"DOMContentLoaded\",c);a()}):document.attachEvent(\"onreadystatechange\",function k(){if(\"interactive\"==document.readyState||\"complete\"==document.readyState)document.detachEvent(\"onreadystatechange\",k),a()})};function t(a){this.a=document.createElement(\"div\");this.a.setAttribute(\"aria-hidden\",\"true\");this.a.appendChild(document.createTextNode(a));this.b=document.createElement(\"span\");this.c=document.createElement(\"span\");this.h=document.createElement(\"span\");this.f=document.createElement(\"span\");this.g=-1;this.b.style.cssText=\"max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;\";this.c.style.cssText=\"max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;\";\nthis.f.style.cssText=\"max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;\";this.h.style.cssText=\"display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;\";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}\nfunction u(a,b){a.a.style.cssText=\"max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:\"+b+\";\"}function z(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+\"px\";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function A(a,b){function c(){var a=k;z(a)&&a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);z(a)};function B(a,b){var c=b||{};this.family=a;this.style=c.style||\"normal\";this.weight=c.weight||\"normal\";this.stretch=c.stretch||\"normal\"}var C=null,D=null,E=null,F=null;function G(){if(null===D)if(J()&&/Apple/.test(window.navigator.vendor)){var a=/AppleWebKit\\/([0-9]+)(?:\\.([0-9]+))(?:\\.([0-9]+))/.exec(window.navigator.userAgent);D=!!a&&603>parseInt(a[1],10)}else D=!1;return D}function J(){null===F&&(F=!!document.fonts);return F}\nfunction K(){if(null===E){var a=document.createElement(\"div\");try{a.style.font=\"condensed 100px sans-serif\"}catch(b){}E=\"\"!==a.style.font}return E}function L(a,b){return[a.style,a.weight,K()?a.stretch:\"\",\"100px\",b].join(\" \")}\nB.prototype.load=function(a,b){var c=this,k=a||\"BESbswy\",r=0,n=b||3E3,H=(new Date).getTime();return new Promise(function(a,b){if(J()&&!G()){var M=new Promise(function(a,b){function e(){(new Date).getTime()-H>=n?b(Error(\"\"+n+\"ms timeout exceeded\")):document.fonts.load(L(c,'\"'+c.family+'\"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},b)}e()}),N=new Promise(function(a,c){r=setTimeout(function(){c(Error(\"\"+n+\"ms timeout exceeded\"))},n)});Promise.race([N,M]).then(function(){clearTimeout(r);a(c)},\nb)}else m(function(){function v(){var b;if(b=-1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===C&&(b=/AppleWebKit\\/([0-9]+)(?:\\.([0-9]+))/.exec(window.navigator.userAgent),C=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=C&&(f==w&&g==w&&h==w||f==x&&g==x&&h==x||f==y&&g==y&&h==y)),b=!b;b&&(d.parentNode&&d.parentNode.removeChild(d),clearTimeout(r),a(c))}function I(){if((new Date).getTime()-H>=n)d.parentNode&&d.parentNode.removeChild(d),b(Error(\"\"+\nn+\"ms timeout exceeded\"));else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,g=p.a.offsetWidth,h=q.a.offsetWidth,v();r=setTimeout(I,50)}}var e=new t(k),p=new t(k),q=new t(k),f=-1,g=-1,h=-1,w=-1,x=-1,y=-1,d=document.createElement(\"div\");d.dir=\"ltr\";u(e,L(c,\"sans-serif\"));u(p,L(c,\"serif\"));u(q,L(c,\"monospace\"));d.appendChild(e.a);d.appendChild(p.a);d.appendChild(q.a);document.body.appendChild(d);w=e.a.offsetWidth;x=p.a.offsetWidth;y=q.a.offsetWidth;I();A(e,function(a){f=a;v()});u(e,\nL(c,'\"'+c.family+'\",sans-serif'));A(p,function(a){g=a;v()});u(p,L(c,'\"'+c.family+'\",serif'));A(q,function(a){h=a;v()});u(q,L(c,'\"'+c.family+'\",monospace'))})})}; true?module.exports=B:(undefined);}());\n\n\n//# sourceURL=webpack:///./node_modules/fontfaceobserver/fontfaceobserver.standalone.js?");
 
 /***/ }),
 
@@ -172,7 +172,19 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n__webpack_require__(/*! bootstrap/scss/bootstrap.scss */ \"./node_modules/bootstrap/scss/bootstrap.scss\");\n\n__webpack_require__(/*! ../css/fontawesome-all.css */ \"./src/assets/css/fontawesome-all.css\");\n\n__webpack_require__(/*! ../scss/style.scss */ \"./src/assets/scss/style.scss\");\n\nvar _wowAnimate = __webpack_require__(/*! ./modules/wowAnimate.js */ \"./src/assets/js/modules/wowAnimate.js\");\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("\n\n__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n__webpack_require__(/*! ../css/fontawesome-all.css */ \"./src/assets/css/fontawesome-all.css\");\n\n__webpack_require__(/*! ../scss/style.scss */ \"./src/assets/scss/style.scss\");\n\n__webpack_require__(/*! ./modules/Common.js */ \"./src/assets/js/modules/Common.js\");\n\nvar _wowAnimate = __webpack_require__(/*! ./modules/wowAnimate.js */ \"./src/assets/js/modules/wowAnimate.js\");\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/Common.js":
+/*!*****************************************!*\
+  !*** ./src/assets/js/modules/Common.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar FontFaceObserver = __webpack_require__(/*! fontfaceobserver */ \"./node_modules/fontfaceobserver/fontfaceobserver.standalone.js\");\nvar font = new FontFaceObserver('Noto Sans KR');\n\nfont.load().then(function () {\n  console.log('Noto Sans KR has loaded');\n  document.body.className += \"font-loaded\";\n}).catch(function () {\n  console.log('Noto Sans KR failed to load.');\n});\n\n//# sourceURL=webpack:///./src/assets/js/modules/Common.js?");
 
 /***/ }),
 
