@@ -1,4 +1,5 @@
 {
+
   "name": "unionguide",
   "version": "1.0.0",
   "description": "",
@@ -8,11 +9,13 @@
     "pro": "webpack --mode production",
     "bundle": "webpack --watch --mode development",
     "start": "webpack-dev-server"
-  },
-  "keywords": [
-    "webpack",
+  }
+
+  ,
+  "keywords": ["webpack",
     "bootstrap",
     "project"
+
   ],
   "author": "yoohj",
   "license": "MIT",
@@ -20,7 +23,9 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
-  },
+  }
+
+  ,
   "devDependencies": {
     "animate-sass": "^0.8.2",
     "autoprefixer": "^9.6.1",

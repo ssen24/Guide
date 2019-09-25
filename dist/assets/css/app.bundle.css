@@ -4070,11 +4070,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #154681;
+  color: #333333;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0a223f;
+    color: #0d0d0d;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -4113,8 +4113,8 @@ table {
   border-collapse: collapse; }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   color: #6c757d;
   text-align: left;
   caption-side: bottom; }
@@ -4972,27 +4972,27 @@ pre {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529; }
+  color: #174d8e; }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 1.25rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6; }
+    border-top: 1px solid #164884; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6; }
+    border-bottom: 2px solid #164884; }
   .table tbody + tbody {
-    border-top: 2px solid #dee2e6; }
+    border-top: 2px solid #164884; }
 
 .table-sm th,
 .table-sm td {
-  padding: 0.3rem; }
+  padding: 0.5rem; }
 
 .table-bordered {
-  border: 1px solid #dee2e6; }
+  border: 1px solid #164884; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dee2e6; }
+    border: 1px solid #164884; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -5007,7 +5007,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .table-hover tbody tr:hover {
-  color: #212529;
+  color: #174d8e;
   background-color: rgba(0, 0, 0, 0.075); }
 
 .table-primary,
@@ -5163,9 +5163,9 @@ pre {
   border-color: #454d55; }
 
 .table .thead-light th {
-  color: #495057;
-  background-color: #e9ecef;
-  border-color: #dee2e6; }
+  color: #f8f9fa;
+  background-color: #154681;
+  border-color: #164884; }
 
 .table-dark {
   color: #fff;
@@ -5988,10 +5988,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #154681;
+  color: #333333;
   text-decoration: none; }
   .btn-link:hover {
-    color: #0a223f;
+    color: #0d0d0d;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline;
@@ -7329,12 +7329,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #154681;
+  color: #333333;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #0a223f;
+    color: #0d0d0d;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -10955,10 +10955,10 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark td,
     .table-dark thead th,
     .table-dark tbody + tbody {
-      border-color: #dee2e6; }
+      border-color: #164884; }
   .table .thead-dark th {
     color: inherit;
-    border-color: #dee2e6; } }
+    border-color: #164884; } }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -11014,15 +11014,12 @@ body {
   animation-name: bounceInUp; }
 
 /*---- sass by @Yoohj ------------------------------------------------------------------- */
-body {
-  font-family: 'Malgun Gothic', sans-serif; }
-  body.font-loaded {
-    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
+body.font-loaded {
+  font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
 
 h1 {
   font-family: 'Black Han Sans', sans-serif;
-  font-size: 3.2em;
-  color: #dedede; }
+  font-size: 3.2em; }
 
 h4 {
   font-weight: normal; }
@@ -11039,3 +11036,6 @@ i.anchor {
   top: 100px;
   position: -webkit-sticky;
   position: sticky; }
+
+table.table {
+  border-bottom: 2px solid #164884; }

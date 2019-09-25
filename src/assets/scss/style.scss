@@ -1,17 +1,14 @@
-$blue: #154681;
+// bootstrap Custom variables
+@import 'bootstrap-custom';
 @import "../../../node_modules/bootstrap/scss/bootstrap";
-
 
 $base-duration: 0.8s;
 $use-bounceInUp: true;
 @import "../../../node_modules/animate-sass/animate";
 
 /*---- sass by @Yoohj ------------------------------------------------------------------- */
-$fontColor:#dedede;
 
 body {
-    font-family: 'Malgun Gothic', sans-serif;
-
     &.font-loaded {
         font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     }
@@ -20,7 +17,6 @@ body {
 h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 3.2em;
-    color: $fontColor;
 }
 
 h4 {
@@ -40,4 +36,8 @@ i.anchor {
     top: 100px;
     position: -webkit-sticky;
     position: sticky;
+}
+
+table.table {
+    border-bottom: 2px solid $table-border-color;
 }

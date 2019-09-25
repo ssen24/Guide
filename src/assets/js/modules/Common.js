@@ -1,4 +1,4 @@
-var FontFaceObserver = require('fontfaceobserver');
+var FontFaceObserver = require('FontFaceObserver');
 var font = new FontFaceObserver('Noto Sans KR');
 
 font.load().then(function () {
