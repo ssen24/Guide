@@ -39,8 +39,17 @@ h1 {
 }
 
 h3 {
+    display: inline-block;
+    width: auto;
+    margin: 1em 0 0.8em;
+    padding-bottom: 8px;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    color: $blue;
+    border-bottom: 1px solid $blue;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 i.anchor {

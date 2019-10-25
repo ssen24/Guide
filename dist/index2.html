@@ -39,6 +39,7 @@
                             <li class="nav-item"><a href="#guide1_10" class="nav-link">Bullet</a></li>
                             <li class="nav-item"><a href="#guide1_11" class="nav-link">Box</a></li>
                             <li class="nav-item"><a href="#guide1_12" class="nav-link">Popup</a></li>
+                            <li class="nav-item"><a href="#guide1_13" class="nav-link">zIndex</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -70,8 +71,7 @@
                                     <!-- ### layout : container ### -->
                                     <fieldset class="guide">
                                         <legend>#container : 본문영역</legend>
-                                        <div class="syntax-container syntax-theme-base syntax-theme-grey"><div class="toolbar"><a href="#">View Raw Code</a><a href="http://www.oriontransfer.co.nz/software/jquery-syntax" target="oriontransfer">?</a></div><ol class="syntax highlighted"><li class="line ln1 alt first"><div class="source css"><span class="css">
-                    </span></div></li><li class="line ln2"><div class="source css"><span class="css">                    </span></div></li></ol></div>
+
                                     </fieldset>
                                     <!-- ### footer ### -->
                                     <fieldset class="guide">
@@ -94,6 +94,98 @@
                     <article class="col py-3">
                         <i class="anchor active" id="guide1_3"></i>
                         <h3 class="">Module</h3>
+                        <table class="table">
+                            <caption></caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">예약어</th>
+                                    <th scope="col">설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tabs</td>
+                                    <td>.tab-</td>
+                                    <td>탭</td>
+                                </tr>
+                                <tr>
+                                    <td>Accordions</td>
+                                    <td>.acco-</td>
+                                    <td>아코디언</td>
+                                </tr>
+                                <tr>
+                                    <td>Folder</td>
+                                    <td>.folder-</td>
+                                    <td>접기/펴기, 간단히/자세히</td>
+                                </tr>
+                                <tr>
+                                    <td>Tooltips</td>
+                                    <td>.tooltip-</td>
+                                    <td>툴팁 설명</td>
+                                </tr>
+                                <tr>
+                                    <td>Drop (Up/Down)</td>
+                                    <td>.drop-</td>
+                                    <td>드롭다운 메뉴토글</td>
+                                </tr>
+                                <tr>
+                                    <td>Layers</td>
+                                    <td>.layer-</td>
+                                    <td>구분없는 레이어</td>
+                                </tr>
+                                <tr>
+                                    <td>Popup</td>
+                                    <td>.popup-</td>
+                                    <td>팝업</td>
+                                </tr>
+                                <tr>
+                                    <td>Stikcy</td>
+                                    <td>.sticky-</td>
+                                    <td>요소고정</td>
+                                </tr>
+                                <tr>
+                                    <td>Floaing</td>
+                                    <td>.floating-</td>
+                                    <td>요소이동</td>
+                                </tr>
+                                <tr>
+                                    <td>Spy Scroll</td>
+                                    <td>.spyScroll-</td>
+                                    <td>스크롤 이동 시키기</td>
+                                </tr>
+                                <tr>
+                                    <td>Infinite Scroll</td>
+                                    <td>.infScroll-</td>
+                                    <td>스크롤 무한 목록보기</td>
+                                </tr>
+                                <tr>
+                                    <td>Custom Scroll</td>
+                                    <td>.cusScroll-</td>
+                                    <td>스크롤 모양 사용자정의</td>
+                                </tr>
+                                <tr>
+                                    <td>Slide Show</td>
+                                    <td>.carousel-</td>
+                                    <td>슬라이드쇼</td>
+                                </tr>
+                                <tr>
+                                    <td>Zommer</td>
+                                    <td>.zommer-</td>
+                                    <td>이미지확대</td>
+                                </tr>
+                                <tr>
+                                    <td>Youtube API</td>
+                                    <td>.youtube-</td>
+                                    <td>유튜브API</td>
+                                </tr>
+                                <tr>
+                                    <td>Google Map API</td>
+                                    <td>.map-</td>
+                                    <td>구글맵</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </article>
                     <hr>
                     <article class="col py-3">
@@ -140,6 +232,49 @@
                         <i class="anchor" id="guide1_12"></i>
                         <h3  class="">Popup</h3>
                     </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor" id="guide1_13"></i>
+                        <h3  class="">zIndex</h3>
+                        <table class="table">
+                            <caption>zIndex</caption>
+                            <colgroup>
+                                <col style="width:25%">
+                                <col style="width:25%">
+                                <col style="width:auto">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">단위</th>
+                                    <th scope="col">설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>인라인</td>
+                                    <td>1</td>
+                                    <td>우선순위 1씩 증가, 기본요소 0</td>
+                                </tr>
+                                <tr>
+                                    <td>그 룹</td>
+                                    <td>10</td>
+                                    <td>우선순위 1씩 증가, 기본요소 10</td>
+                                </tr>
+                                <tr>
+                                    <td>구 조</td>
+                                    <td>100</td>
+                                    <td>우선순위 1씩 증가, 기본요소 100</td>
+                                </tr>
+                                <tr>
+                                    <td>팝 업</td>
+                                    <td>1000</td>
+                                    <td>우선순위 1씩 증가, 기본요소 1000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+
                 </main>
             </div>
         </section>

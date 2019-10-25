@@ -6944,27 +6944,27 @@ pre {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #1c5ead; }
+  color: #495057; }
   .table th,
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #195297; }
+    border-top: 1px solid #6c757d; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #195297; }
+    border-bottom: 2px solid #6c757d; }
   .table tbody + tbody {
-    border-top: 2px solid #195297; }
+    border-top: 2px solid #6c757d; }
 
 .table-sm th,
 .table-sm td {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid #195297; }
+  border: 1px solid #6c757d; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #195297; }
+    border: 1px solid #6c757d; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -6979,7 +6979,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .table-hover tbody tr:hover {
-  color: #1c5ead;
+  color: #495057;
   background-color: rgba(0, 0, 0, 0.075); }
 
 .table-primary,
@@ -7137,7 +7137,7 @@ pre {
 .table .thead-light th {
   color: #f8f9fa;
   background-color: #154681;
-  border-color: #195297; }
+  border-color: #6c757d; }
 
 .table-dark {
   color: #fff;
@@ -12927,10 +12927,10 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark td,
     .table-dark thead th,
     .table-dark tbody + tbody {
-      border-color: #195297; }
+      border-color: #6c757d; }
   .table .thead-dark th {
     color: inherit;
-    border-color: #195297; } }
+    border-color: #6c757d; } }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -13002,8 +13002,16 @@ h1 {
   letter-spacing: -0.08em; }
 
 h3 {
+  display: inline-block;
+  width: auto;
+  margin: 1em 0 0.8em;
+  padding-bottom: 8px;
   font-weight: bold;
-  margin-bottom: 0.5em; }
+  color: #154681;
+  border-bottom: 1px solid #154681; }
+
+h4 {
+  font-weight: bold; }
 
 i.anchor {
   display: block;
@@ -13018,8 +13026,8 @@ i.anchor {
   position: sticky; }
 
 table.table {
-  border-top: 2px solid #195297;
-  border-bottom: 2px solid #195297; }
+  border-top: 2px solid #6c757d;
+  border-bottom: 2px solid #6c757d; }
   table.table caption {
     font-size: 0.8em; }
 

@@ -30,5 +30,5 @@ $font-size-base: 0.85rem;
 // $table-cell-padding-sm: 0.5rem;
 $table-head-bg:$blue;
 $table-head-color:$gray-100;
-$table-color:lighten($blue, 10%);
-$table-border-color: lighten($blue, 5%);
+$table-color:$gray-700;
+$table-border-color: $gray-600;
