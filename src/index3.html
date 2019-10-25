@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TITLE</title>
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:100,300,700&display=swap&subset=korean" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#sidemenu" data-offset="50">
+        <!-- HEADER -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-dark bg-primary navbar-expand-md py-2 px-5">
+                <h2 class="navbar-brand mt-1"><strong>유비온 퍼블리싱 가이드</strong></h2>
+                <div class="navbar-collapse collapse mx-3" id="navbarNav">
+                    <button class="btn btn-primary" type="button" onclick="location.href='index.html'">작업규칙</button>
+                    <button class="btn btn-primary" type="button" onclick="location.href='index2.html'">마크업가이드</button>
+                    <button class="btn btn-primary active" type="button" onclick="location.href='index3.html'">HTML리스트</button>
+                </div>
+            </nav>
+        </header>
+        <!-- //HEADER -->
+
+        <section class="container-fluid" id="content">
+            <div class="row h-100 py-5">
+                <nav class="col-xl-3 col-lg-3 p-5 bg-light sidebar">
+                    <div class="mt-4 mb-3 pt-2 sticky-top" id="sidemenu">
+                        <h1 class="pb-2">HTML리스트</h1>
+                        <ul class="nav nav-pills flex-md-column flex-row justify-content-between">
+                            <li class="nav-item"><a href="#guide1_1" class="nav-link active">MAIN</a></li>
+                            <li class="nav-item"><a href="#guide1_2" class="nav-link">SUB</a></li>
+                            <li class="nav-item"><a href="#guide1_3" class="nav-link">MYPAGE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <main role="main" class="col m-3" id="main">
+                    <article class="col mt-5 py-3">
+                        <i class="anchor active" id="guide1_1"></i>
+                        <h3 class="">MAIN</h3>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor active" id="guide1_2"></i>
+                        <h3  class="">SUB</h3>
+                    </article>
+                    <hr>
+                    <article class="col py-3">
+                        <i class="anchor active" id="guide1_3"></i>
+                        <h3  class="">MYPAGE</h3>
+                    </article>
+                </main>
+            </div>
+        </section>
+    </body>
+
+</html>

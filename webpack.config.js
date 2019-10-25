@@ -109,6 +109,16 @@ module.exports = {
             filename: 'index.html',
             template: 'src/index.html',
             'files': fileOptions
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index2.html',
+            template: 'src/index2.html',
+            'files': fileOptions
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index3.html',
+            template: 'src/index3.html',
+            'files': fileOptions
         })
     ]
 }
