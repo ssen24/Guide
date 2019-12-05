@@ -2,6 +2,9 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const hljs = require('highlight.js');
+
+
 
 const fileOptions = {
     'css': ['app.bundle.css'],
@@ -27,7 +30,10 @@ module.exports = {
     mode: 'development',
     devServer: {
         contentBase: __dirname + '/dist',
-        port: 3001
+        port: 8080,
+        watchOptions: {
+            poll: true
+        }
     },
     module: {
         rules: [

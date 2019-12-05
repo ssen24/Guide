@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Ubion Guide</title>
-        <link rel="preconnect" as="font" crossorigin="crossorigin" href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR:100,300,700&display=swap&subset=korean" rel="stylesheet">
     </head>
     <body data-spy="scroll" data-target="#sidemenu" data-offset="50">
         <!-- HEADER -->
@@ -37,6 +36,76 @@
                     <article class="col mt-5 py-3">
                         <i class="anchor active" id="guide1_1"></i>
                         <h3 class="">MAIN</h3>
+                        <pre><code class="xml">
+&lt;table class="table"&gt;
+    &lt;caption&gt;표 1-2 네이밍 조합 예&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col style="width:10%"&gt;
+        &lt;col style="width:45%"&gt;
+        &lt;col style="width:45%"&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;기본형&lt;/th&gt;
+            &lt;th&gt;잘못된 예&lt;/th&gt;
+            &lt;th&gt;올바른 예&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;section&lt;/td&gt;
+            &lt;td&gt;sectionList &lt;/td&gt;
+            &lt;td&gt;section_list&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;no&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;no1,no2,no3…,no10&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                            </code></pre>
+
+                        <pre><code class="scss">
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .tui-toolbar-icons {
+        background-image: url('../img/tui-editor-2x.png');
+    }
+}
+h3 {
+    display: inline-block;
+    width: auto;
+    margin: 1em 0 0.8em;
+    padding: 0 0.3em 8px 0.3em;
+    font-weight: bold;
+    color: $blue;
+    @include linear-gradient(transparent 45%, lighten($blue, 65%) 0);
+}
+
+h4 {
+    font-weight: bold;
+}
+
+i.anchor {
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+
+#sidemenu {
+    position: fixed;
+    top: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+}
+                        </code></pre>
                     </article>
                     <hr>
                     <article class="col py-3">

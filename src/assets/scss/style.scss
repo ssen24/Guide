@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,700&display=swap&subset=korean');
+
 @import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
-// @import "bourbon";
+
 // bootstrap Custom variables
 @import 'bootstrap-custom';
 @import "../../../node_modules/bootstrap/scss/bootstrap";
@@ -8,10 +10,10 @@ $base-duration: 0.8s;
 $use-bounceInUp: true;
 @import "../../../node_modules/animate-sass/animate";
 
-//TuiEditor 이미지 경로
-.tui-toolbar-icons {
-    background-image: url('../img/tui-editor.png');
-}
+//highlighter
+@import "../../../node_modules/highlight.js/scss/tomorrow-night-blue.scss";
+
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -27,9 +29,12 @@ only screen and (min-resolution: 2dppx) {
 
 /*---- sass by @Yoohj ------------------------------------------------------------------- */
 
+
 body {
+
     &.font-loaded {
         font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        font-weight: 300;
     }
 }
 
@@ -105,4 +110,10 @@ fieldset.guide {
         text-indent: 0 !important;
         font-weight: bold;
     }
+}
+
+//코드 하이라이트
+code.hljs {
+    max-height: 300px;
+    padding: 1em 3em !important;
 }
